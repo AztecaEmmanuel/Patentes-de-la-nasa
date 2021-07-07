@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom';
 
 import textCleaning from '../services/textCleaning';
 
@@ -7,7 +7,7 @@ import textCleaning from '../services/textCleaning';
 
 
 const Card = ({patent}) => {
-    let idDetails = `/details:${patent[0]}`;
+    // let idDetails = `/details:${patent[0]}`;
 
     const patentDescription = textCleaning(patent[2]);
     
@@ -23,9 +23,9 @@ const Card = ({patent}) => {
                     <p className="card-text">{patentDescription}</p>
 
                     <div className="center">
-                        <Link to={idDetails} className="btn btn-primary text-center">
-                            More Details
-                        </Link>
+                            {/* <Link to={idDetails} className="btn btn-primary text-center"> */}
+                                <a className="btn btn-primary text-center" href="/#">More Details</a>
+                            {/* </Link> */}
                     </div>
 
                 </div>

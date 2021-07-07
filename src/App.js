@@ -1,12 +1,12 @@
 import React, { Component, Suspense, lazy } from 'react';
-import { BrowserRouter as Router ,Route } from 'react-router-dom';
+// import { BrowserRouter as Router ,Route } from 'react-router-dom';
 
 // SERVICES
 import { request } from './services/request';
 import { getStorage, setStorage } from './services/storage';
 
 // COMPONENTS
-import Details from './components/Details';
+// import Details from './components/Details';
 import Baner from './components/Baner';
 import Contact from './components/Contact';
 import About from './components/About';
@@ -52,9 +52,9 @@ class App extends Component {
 
       <div className="container">
         <div className="row">
-          <Router>
+          {/* <Router> */}
 
-              <Route exact path="/">
+              {/* <Route exact path="/"> */}
                 <Baner/>
                 <h1 id="lista" className="col-sm-12 col-lg-12 col-md-12 h1 text-whites text-center">Lista de patentes</h1>
                 <Suspense fallback={<h1>Esperando....</h1>}>
@@ -64,11 +64,11 @@ class App extends Component {
                 <Contact />
                 <Footer />
 
-              </Route>
+              {/* </Route> */}
               
-              <Route path="/details:id" children={<Details/>} />
+              {/* <Route exact path="/details:id" children={<Details/>} /> */}
 
-          </Router>
+          {/* </Router> */}
         </div>
       </div>
     )

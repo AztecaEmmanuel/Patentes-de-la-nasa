@@ -1,5 +1,9 @@
 # Listado de patentes de la nasa
 
+# Nota
+
+    El enruptador de react esta comentado para que GitHub pueda publicar la pagina sin errores
+
 ## Tecnologias utilizadas:
 
 - [x] React

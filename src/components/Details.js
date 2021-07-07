@@ -21,11 +21,11 @@ const Details = () => {
 
     return(
         <div className="container">
-            <div className="wp-100 center">
-                <div className="col-sm-4">
+            <div className="wp-100 center size">
+                <div className="col-sm-12 col-md-4">
                     <img className="img-max" src={detailsPatent[10]} alt=""/>
                 </div>
-                <div className="col-sm-8">
+                <div className="col-sm-12 col-md-8">
                     <div className="wp-100 text-whites">
                             <p className="card-title">{detailsPatent[1]}</p>
                             <h1 className="h1">
