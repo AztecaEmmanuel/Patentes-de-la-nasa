@@ -1,0 +1,19 @@
+@import "./css/mini-frameword-nebula.css";
+
+body {
+  background: #000000;
+}
+
+.line-height-25 {
+  line-height: 25px;
+}
+
+.line-height-40 {
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .line-height-40 {
+    line-height: 25px;
+  }
+}
